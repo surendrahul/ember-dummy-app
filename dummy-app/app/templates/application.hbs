@@ -1,0 +1,14 @@
+<h1>hello world </h1>
+<h5>app name: {{appName}}</h5>
+<h5>Owner : {{userName}} </h5>
+<div style="border:2px solid black; padding:30px 10%">
+
+    {{#each this.model as |friend|}}
+<br>
+    {{friend-data friend=friend}}
+<br>
+    {{/each}}
+</div>
+
+
+{{outlet}}
